@@ -1,38 +1,277 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Oswald:wght@500&family=Ubuntu:wght@300&display=swap');
+:root{
+  --primary-app-color: #02203c;
+  --secondary-app-color: #001528;
+  --stand-out-color: #fffb00;
+}
 .App {
-  text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ *{
+   padding:0;
+   margin:0;
+ }
+
+ .herosection {
+   background: linear-gradient( -90deg,
+   var(--primary-app-color),
+   var(--secondary-app-color)
+  );
+   clip-path: polygon(0 0, 100% 0, 100% 78%, 52% 100%, 0 78%);
+
+ }
+
+ .nav-items{
+   cursor: pointer;
+   color: white;
+   font-size:1.3rem;
+   font-family: "ubuntu";
+
+ }
+ .brand-name{
+   font-family:"oswald";
+   color: #fff;
+   font-size: 2rem;
+ }
+ .px-10 {
+   padding-inline: 90px;
+ }
+ .index{
+   height: 5cm;
+   width: 5cm;
+ }
+ .im-text-section{
+   padding-top: 45px;
+   text-align: center;
+   padding-bottom: 52px;
+   margin-bottom: 30px;
+ }
+ .first-text{
+   color: #ffff;
+   font-family: "open sans";
+   font-size: 1.4rem;
+ }
+ .im-text{
+   color: white;
+   font-family: "ubuntu";
+   font-weight:700;
+   font-size: 1.2rem;
+ }
+ .my-text-3{
+   color: var(--stand-out-color);
+   font-size: 28px;
+
+ }
+ 
+ .im-text-4{
+   font-family: "open sans";
+   color: #ffff;
+   font-size: 2.0rem;
+
+
+ }
+
+ .im-text-5{
+   color:white;
+ }
+
+ .herosection-2{
+   padding-top: 60px;
+
+
+ }
+ 
+ .btn-hire-us{
+   font-size: 1.3rem;
+   font-family: "ubuntu";
+   color: #ffff;
+   background: transparent;
+   border-radius: 25px;
+   margin-inline: 12px;
+   padding: 5px 40px;
+   border: 2px solid white;
+   transation: all 0.3s ease-in-out;
+  animation: anim 1s ease-in-out infinite;
+
+ }
+ .btn-hire-us:hover {
+   transform: translateX(-5px);
+   background-color: var(--stand-out-color);
+   color: black;
+
+ }
+
+ .btn-apply-us{
+  font-size: 1.3rem;
+  font-family: "ubuntu";
+  color:#ffff;
+  background: red;
+  border-radius: 25px;
+  margin-inline: 12px;
+  padding: 5px 40px;
+  border: 2px solid white;
+  transation: all 0.3s ease-in-out;
+  animation: anim 1s ease-in-out forwards;
+ 
+ }
+ .btn-apply-us:hover{
+   transform: translateY(-5px);
+ }
+
+ @keyframes anim {
+   0%{
+     transform: scale(1);
+   }
+   50% {
+     Transform: scale(1.1);
+    
+   }
+   100% {
+     transform: scale(1);
+   }
+
+ }
+
+ .custom-img{
+   width: 300px;
+   border-radius: 50%;
+   object-fit: contain;
+   display: flex;
+   justify-content: center;
+
+   border: 1px solid #ffff;
+ }
+
+ /*  about me section*/
+
+ .about-me-text{
+   font-family: "ubuntu";
+   font-weight:800;
+   font-size:3.5rem;
+   text-decoration: underline;
+   text-spacing:2px;
+   text-align: center;
+ }
+ .why-choose-us{
+   font-family: "ubuntu";
+   font-width: 700;
+   font-size: 1.2rem;
+   opacity: 0.8;
+   text-transform: capitalize;
+   text-align: center;
+ }
+
+ .aboutme-inside{
+   width:80%;
+   margin-inline: auto ;
+ }
+
+ .some-text-about-me{
+   font-family:"ubuntu";
+   font-weight: 600;
+   font-size:1.2rem;
+   opacity:0.8;
+   text-align: justify;
+
+
+ }
+
+ .fer-highlights{
+  font-family:"ubuntu";
+  padding-block: 12px ;
+ 
+ }
+
+.few-text{
+  font-family:"ubuntu";
+  font-weight: 900;
+  font-size:1.5rem;
+
+
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.few-list{
+  font-family:"ubuntu";
+  font-size:1.2rem;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+
+}
+/* ABOUT ME SECTION END */
+
+
+/* strength section */
+
+
+.strength-options-items{
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  padding-block: 24px;
+  padding-inline: 24px;
+  color: #000;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.strength-options-items:hover{
+  width: 120%;
+  background: linear-gradient(
+    -90deg,
+  var(--primary-app-color),
+  var(--secondary-app-color));
   color: white;
+  
+}
+.icons-span{
+  margin-block: 24px;
+  margin-inline: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.selected{
+  background: linear-gradient(45deg,
+  var(--primary-app-color),
+  var(--secondary-app-color));
+  color: white;
+  width: 120%;
+}
+.bg-new {
+  background: linear-gradient(45deg,
+  var(--primary-app-color),
+  var(--secondary-app-color));
+}
+.our-strength-section{
+  padding-top:100px ;
+  padding-bottom: 100px;
+  background: var(--primary-app-color);
+  color: #ffff;
+  clip-path: polygon(0 11%,100% 0, 100% 100%,0 100% );
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.strength-new-section{
+  background: #ffff;
+  box-shadow:10px 10px 31px 2px #1c1c1c ;
+}
+
+/* contact me part*/
+
+.contact-me-part {
+  color: #fff;
+}
+
+.relative-bg {
+   clip-path: polygon(0 5%, 100% 14%, 100% 90%, 0 96%); 
+  background: linear-gradient(
+    var(--primary-app-color),
+    var(--secondary-app-color)
+  );
+  height: 120%;
+  width: 100%;
+  position: absolute;
+  z-index: -4;
+
+}
+.contact-inner-part{
+  padding-block: 118px;
 }

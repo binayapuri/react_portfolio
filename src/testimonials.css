@@ -1,0 +1,13 @@
+.testimonials-card{
+    border-radius: 50px 20px 50px 0px;
+    padding: 24px;
+    width: 90%;
+
+
+}
+.description{
+    color: #000;
+    font-family: "ubuntu";
+    font-weight: 700;
+    
+}
